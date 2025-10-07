@@ -3,14 +3,14 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route("/")
-def home():
-    return render_template("menu.html")
+def inicio():
+    return render_template("base.html")
 
 @app.route("/animales")
 def animales():
     return render_template("animales.html")
 
-@app.route("/vehiculo")
+@app.route("/vehiculos")
 def carros():
     return render_template("vehiculos.html")
 
