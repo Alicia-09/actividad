@@ -1,7 +1,11 @@
 {% extends 'base.html' %}
 
+{% block titulo %}
+Animales exoticos
+{% endblock %}
+
 {% block contenido %}
-<div class="m-3 col-6">
+<div class="container-text-center  row">
         <h2 class="text-center">El maravilloso reino animal</h2>
         <p>
             El reino animal está lleno de especies sorprendentes. A continuación te mostramos algunos ejemplos
@@ -12,23 +16,23 @@
         <p>Pez hacha (Argyropelecus gigas): Vive en grandes profundidades y es capaz de hacerse casi invisible gracias a
             su color oscuro y la emisión de luz para mimetizarse con los reflejos de la superficie.</p>
             
-        <div class="col-6">
-        <img src="pezh.jpg" alt="Pez hacha" class="img-fluid">
+        <div class="col">
+        <img src="{{ url_for( 'static', filename='img/pezh.jpg') }}" alt="Pulpo Dumbo">
         </div>
 
 
         <p>Pez mandarín (Synchiropus splendidus): Conocido como el pez más bello del mundo marino, con colores vibrantes
             y aletas que parecen plumas.</p>
 
-            <div class="col-6">
-        <img src="pezm.jpg" alt="Pez mandarin">
+            <div class="col">
+            <img src="{{url_for('static', filename='img/pezm.jpg') }}" alt="Pez mandarin">
         </div>
 
         <p>Pulpo Dumbo (Grimpoteuthis): Un molusco cefalópodo de las profundidades marinas, llamado así por las grandes
             aletas que sobresalen de su "cabeza" y que se parecen a las orejas del personaje de Disney.</p>
         
-        <div class="col-6">
-            <img src="dumbo.jpg" alt="Pulpo Dumbo">
+        <div class="col">
+            <img src="{{url_for('static', filename='img/dumbo.jpg') }}" alt="Pulpo Dumbo">
             </div>
 
         <h3>Terrestres</h3>
@@ -38,14 +42,14 @@
 
         <p>Hurón: Uno de los animales exóticos domésticos más populares, según Implika.</p>
         
-        <div class="col-6">
-        <img src="huron.jpg" alt="Huron">
+        <div class="col">
+        <img src="{{url_for('static', filename='img/huron.jpg') }}" alt="Huron">
         </div>
 
         <p>Pangolín: Un mamífero único con escamas, en peligro de extinción por su comercio ilegal.</p>
         
-        <div class="col-6">
-        <img src="Pango.jpg" alt="Pangolin">
+        <div class="col">
+        <img src="{{url_for('static', filename='img/Pango.jpg') }}" alt="Pangolin">
         </div>
 
         <h3>Aereos</h3>
@@ -56,15 +60,15 @@
         <p>Colibríes: Pequeños y ágiles, son aves originarias de América y se encuentran entre las más pequeñas del
             mundo.</p>
 
-        <div class="col-6">
-        <img src="Coli.jpg" alt="Colibri">
+        <div class="col">
+        <img src="{{url_for('static', filename='img/Coli.jpg') }}" alt="Colbries">
         </div>
 
         <p>Quetzal: El Quetzal es frecuentemente considerado como una de las aves más bellas debido a su plumaje
             iridiscente y su cola de hasta un metro de largo</p>
 
-        <div class="col-6">
-        <img src="quet.jpg" alt="Quetzal">
+        <div class="col">
+        <img src="{{url_for('static', filename='img/quet.jpg') }}" alt="Quetzal">
         </div>
 
     </div>
